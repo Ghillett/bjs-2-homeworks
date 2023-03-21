@@ -42,5 +42,5 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
 
   const fullCredit = monthlyPayment * countMonths; 
 
-  return fullCredit.toFixed(2);
+  return Number(fullCredit.toFixed(2));
 }
