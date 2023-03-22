@@ -9,13 +9,11 @@ function solveEquation(a, b, c) {
   } else if( discrimenant === 0 ){
     arr.push(-b / (2 * a));
     return arr;
-  } else if(discrimenant > 0){
+  } else {
     arr.push((-b + Math.sqrt(discrimenant) )/(2*a));
     arr.push((-b - Math.sqrt(discrimenant) )/(2*a));
     return arr;
-  } else{
-    throw new Error ('Что-то пошло не так!'); 
-  }
+  } 
 }
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
