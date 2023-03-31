@@ -4,8 +4,7 @@ function compareArrays(arr1, arr2) {
         return false;
     }
 
-    if(arr1.every((item, index) => arr2[index] === item
-    )){
+    if(arr1.every((item, index) => arr2[index] === item)){
         return true;
     }else{
         return false;
