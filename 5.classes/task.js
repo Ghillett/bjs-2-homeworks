@@ -92,7 +92,7 @@ class DetectiveBook extends Book{
 
     giveBookByName(bookName){
         let foundBook = this.books.find(item => item.name == bookName);
-        if(foundBook != -1){
+        if(Boolean(foundBook)){
             this.books = this.books.filter(item => item.name != bookName);
             return foundBook;
         }else{
@@ -118,3 +118,4 @@ let givenBook = library.giveBookByName('Десять негритят');
 givenBook.setState = 30;
 givenBook.fix();
 library.addBook(givenBook);
+console.log(library.giveBookByName('aaaaaaaaaaa'));
